@@ -1,5 +1,8 @@
 import re
 import nltk
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "nltk"])
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from tensorflow.keras.preprocessing.sequence import pad_sequences
